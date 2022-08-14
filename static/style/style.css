@@ -1,0 +1,11 @@
+body {
+    background-color: white;
+}
+
+.calculator_box_div {
+    border-width: medium;
+    border-radius: 3px;
+    border-color: #485F6E;
+    width: 60px;
+    height: 80px;
+}
