@@ -59,3 +59,10 @@ body {
 #bmi_result {
     color: #11557C;
 }
+
+#assertion_div {
+    position: relative;
+    top: 25%;
+    border: 1px solid black;
+    height: 132px;
+}
