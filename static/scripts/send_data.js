@@ -15,12 +15,7 @@ function displayBmiResult() {
     let result_h_tag = document.getElementById("bmi_result");
     // result_h_tag.innerHTML = "Give your data!";
     let bmiResult = calculateBMI();
-    if (bmiResult == null) {
-        result_h_tag.innerHTML = "Give your data!";
-    }
-    else{
-        result_h_tag.innerHTML = "Your BMI = " +  bmiResult;
-    }
+    result_h_tag.innerHTML = "Your BMI = " +  bmiResult.toFixed(2);
 }
 
 function submitCalcData() {
