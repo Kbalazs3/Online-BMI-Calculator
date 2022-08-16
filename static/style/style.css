@@ -61,3 +61,7 @@ body {
     background-color: gold;
     color: black;
 }
+
+#bmi_result {
+    color: #11557C;
+}
