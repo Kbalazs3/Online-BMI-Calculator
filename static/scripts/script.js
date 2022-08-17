@@ -13,9 +13,27 @@ function calculateBMI(weightAndHeight) {
 
 function displayBmiResult() {
     let result_h_tag = document.getElementById("bmi_result");
-    // result_h_tag.innerHTML = "Give your data!";
     let bmiResult = calculateBMI();
     result_h_tag.innerHTML = "Your BMI = " +  bmiResult.toFixed(2);
+    let ass_p_tag = document.getElementById("assertion_p_tag");
+    let assertion_div = document.getElementById("assertion_div");
+    if(bmiResult >= 20.5 && bmiResult < 26.5) {
+        ass_p_tag.innerHTML = "Normal body mass index. Great Job! :)";
+        assertion_div.style.backgroundColor = "green";
+        ass_p_tag.style.color = "white";
+    }
+    else if(bmiResult >= 26.6 && bmiResult <= 31.9) {
+        ass_p_tag.innerHTML = "Overweight. You have to loose a few kg-s.\nSuggestions:\n- Eat less!\n";
+        assertion_div.style.backgroundColor = "yellow";
+        ass_p_tag.style.color = "black";
+    }
+
+    else if(bmiResult >= 32.0 && bmiResult <= 36.9) {
+        ass_p_tag.innerHTML = "2. Level Overweight. You have to loose a few kg-s.\nSuggestions:\n- Eat less!\n";
+        assertion_div.style.backgroundColor = "orange";
+        ass_p_tag.style.color = "black";
+    }
+
 }
 
 function submitCalcData() {
