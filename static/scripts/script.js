@@ -23,14 +23,24 @@ function displayBmiResult() {
         ass_p_tag.style.color = "white";
     }
     else if(bmiResult >= 26.6 && bmiResult <= 31.9) {
-        ass_p_tag.innerHTML = "Overweight. You have to loose a few kg-s.\nSuggestions:\n- Eat less!\n";
+        ass_p_tag.innerHTML = "Overweight. You have to loose a few kg-s.\nSuggestions:\n- Eat less!\nSport!!";
         assertion_div.style.backgroundColor = "yellow";
         ass_p_tag.style.color = "black";
     }
 
     else if(bmiResult >= 32.0 && bmiResult <= 36.9) {
-        ass_p_tag.innerHTML = "2. Level Overweight. You have to loose a few kg-s.\nSuggestions:\n- Eat less!\n";
+        ass_p_tag.innerHTML = "1. Level Obesity. You have to loose a few kg-s.\nSuggestions:\n- Eat less!\nSport!!";
         assertion_div.style.backgroundColor = "orange";
+        ass_p_tag.style.color = "black";
+    }
+        else if(bmiResult >= 37.0 && bmiResult <= 41.9) {
+        ass_p_tag.innerHTML = "2. Level Obesity. You have to loose weight!.\nSuggestions:\n- Eat less!\nSport!!";
+        assertion_div.style.backgroundColor = "orange";
+        ass_p_tag.style.color = "black";
+    }
+        else if(bmiResult >= 42.0) {
+        ass_p_tag.innerHTML = "3. Level Obesity. You have to loose weight! Fast!!.\nSuggestions:\n- Eat less!\nSport!!";
+        assertion_div.style.backgroundColor = "red";
         ass_p_tag.style.color = "black";
     }
 
